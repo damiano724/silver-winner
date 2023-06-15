@@ -8,9 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-//                 sh '''
-//                 ./run-tests
-//                 '''
+                echo 'step Build'
             }
         }
     }
