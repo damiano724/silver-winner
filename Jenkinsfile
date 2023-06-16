@@ -12,6 +12,8 @@ pipeline {
                     curl https://example.org/ | grep -F '<title>'
                 '''
             }
+        }
+        stage('Build') {
             steps {
                 [
                     '111',
@@ -22,11 +24,6 @@ pipeline {
                     echo aqq > ${zmienna}
                 '''
                 }
-            }
-        }
-        stage('Build') {
-            steps {
-                echo '1'
             }
         }
     }
