@@ -15,7 +15,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'step Build'
+                sh '''
+                    curl https://example.org/ | grep -F '<title>'
+                '''
             }
         }
     }
