@@ -15,13 +15,15 @@ pipeline {
         }
         stage('Build') {
             steps {
-                [
-                    '111',
-                    '222',
-                    '333'
-                    ].each { zmienna ->
                 sh '''
-                    echo aqq > ${zmienna}
+                    [
+                        '111',
+                        '222',
+                        '333'
+                        ].each { zmienna ->
+                    sh '''
+                        echo aqq > ${zmienna}
+                    '''
                 '''
                 }
             }
