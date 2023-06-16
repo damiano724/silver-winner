@@ -25,7 +25,6 @@ pipeline {
                         echo aqq > ${zmienna}
                     '''
                 '''
-                }
             }
         }
     }
