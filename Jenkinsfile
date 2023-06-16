@@ -12,4 +12,15 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'aalways'
+        }
+        success {
+            echo 'sukces'
+        }
+        failure {
+            echo 'fail'
+        }
+    }
 }
