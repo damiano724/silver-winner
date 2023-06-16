@@ -15,7 +15,6 @@ pipeline {
         }
         stage('Each') {
             steps {
-                sh '''
                     [
                         '111',
                         '222',
@@ -24,7 +23,6 @@ pipeline {
                     sh '''
                         echo aqq > ${zmienna}
                     '''
-                '''
             }
         }
     }
